@@ -21,7 +21,7 @@ seg = load('seg_brainweb_MS_mod.mat','seg','seg_label'); % struct "seg" needs th
 % NAWM with sub-compartments MWF, IC, EC
 tissue_comps{1}.subcomp_label = {'MWF', 'IC','EC'};
 tissue_comps{1}.par1 = [120, 950, 700];
-%tissue_comps{1}.par2 = [20, 100, 75];
+tissue_comps{1}.par2 = [20, 100, 75];
 tissue_comps{1}.f = [20, 42.5, 37.5]/100; % should sum up to 1
 
 % GM with sub-compartments MWF, IC, EC
